@@ -1,15 +1,15 @@
 const studies = [
   {
     id: 1,
-    title: 'Ingeniería en Informática',
-    institution: 'Universidad Nacional de La Matanza',
-    date: '2016 - Presente',
+    title: 'Desarrollador Web Full Stack',
+    institution: 'The Bridge - Escuela de Tecnología',
+    date: '2025 - 2025',
   },
   {
     id: 2,
-    title: 'Técnico en Informática',
-    institution: 'Escuela de Educación Técnica N° 4',
-    date: '2010 - 2015',
+    title: 'Licenciatura en Educación Física',
+    institution: 'Universidad Abierta Interamericana',
+    date: '2013 - 2015',
   },
 ];
 
