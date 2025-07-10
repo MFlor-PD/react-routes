@@ -26,7 +26,7 @@ function Resume() {
       <h2>Education</h2>
       {studiesList}
 
-      <h2>Laboral Experience</h2>
+      <h2>Work Experience</h2>
       {laboralExprience}
 
       <Link to="/" className="right-link">Go to Home</Link>
