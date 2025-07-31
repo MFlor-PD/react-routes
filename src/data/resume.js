@@ -16,15 +16,21 @@ const studies = [
 const experiences = [
   {
     id: 1,
-    title: 'Desarrollador Frontend',
-    company: 'Tecso',
-    date: '2021 - Presente',
+    title: 'Lifeguard Coordinator',
+    company: 'Marsave - Ibiza',
+    date: 'APR 2024 - NOV 2024',
   },
   {
     id: 2,
-    title: 'Desarrollador Fullstack',
-    company: 'Freelance',
-    date: '2019 - 2021',
+    title: 'Lifeguard Manager',
+    company: 'Tobruk Memorial Pool - Australia',
+    date: 'JUN 2022 - AUG 2023',
+  },
+  {
+    id: 3,
+    title: 'Physical Education Teacher',
+    company: 'Argentina, Spain, and Australia',
+    date: 'DIC 2013 - APR 2021',
   },
 ];
 

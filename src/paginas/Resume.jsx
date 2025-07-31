@@ -20,9 +20,9 @@ function Resume() {
   ));
   return (
     <div className="resume">
-      <h1>Welcome to the Resume Page</h1>
-      <p>This is the resume page of your application.</p>
-
+      <h1>Welcome to my Resume Page</h1>
+      <p>A little bit of me</p>
+      
       <h2>Education</h2>
       {studiesList}
 

@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Project 3',
+    name: 'Project 3 - SocoShifts: Intelligent Work Roster Tool',
     image:
       'https://res.cloudinary.com/dn221o8fa/image/upload/v1753382096/Screenshot_2025-07-24_203341_xzz9jf.png',
     description: 'Aplicacion para gestionar cuadrantes en entornos dinamicos como ser la hosteleria, la restauracion y el servicio de socorrismo. Genera los turnos de trabajo aleatoriamente ajustando parametros especificos como ser la carga horaria diaria, la cantidad de socorristas y la necesidad de socorristas en la zona. Actualmente esta en mvp solo para el ambiente del socorrismo. Utiliza para el backend: Node.js, Express, PostgreSQL, AWS, Prisma. Para el frontend: React y Tailwind CSS.',

@@ -13,8 +13,7 @@ function Projects() {
     ));
     return (
         <div className="projects">
-            <h1>Welcome to the Projects Page</h1>
-            <p>This is the projects page of your application.</p>
+            <h1>Welcome to my Projects</h1>
             <div className="projects-list">  
             {projectList}
             </div>
