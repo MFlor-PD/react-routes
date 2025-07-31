@@ -18,7 +18,7 @@ function Projects() {
             <Link to="/resume" className="left-link">Go to Resume</Link>
         </div>
         <div className="projects">
-            <h1>Welcome to my Projects</h1>
+            <h1>Feel free to have a look!</h1>
             <div className="projects-list">  
             {projectList}
             </div>

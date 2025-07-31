@@ -26,7 +26,7 @@ function Resume() {
       </div>
     
       <div className="resume">
-          <h1>Welcome to my Resume Page</h1>
+          <h1>My Resume</h1>
             <p>A little bit of me</p>
       
           <h2>Education</h2>
