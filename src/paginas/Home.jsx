@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { BiMessageSquareDetail } from 'react-icons/bi';
 
 function Home() {
   return (
@@ -36,7 +37,11 @@ function Home() {
     aria-label="Email"
   >
     <FaEnvelope size={30} />
+  
   </a>
+  <Link to="/form" aria-label="Contact Form">
+  <BiMessageSquareDetail size={30} />
+</Link>
 </footer>
 
   </>
