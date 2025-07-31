@@ -97,6 +97,29 @@ a {
 .left-link:hover, .right-link:hover {
   opacity: 0.8;
 }
+
+.contact-icons {
+  position: fixed;        /* fijo en pantalla */
+  bottom: 20px;           /* 20px desde abajo */
+  right: 20px;            /* 20px desde la derecha */
+  display: flex;
+  gap: 15px;              /* espacio entre íconos */
+  color: #0d6098;           /* color negro para los íconos */
+  z-index: 1000;          /* para que quede encima de otros elementos */
+}
+
+/* Asegura que los íconos hereden el color */
+.contact-icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Opcional: al pasar el mouse */
+.contact-icons a:hover {
+  color: gray;
+}
+
+
 .projects {
   max-width: 900px;
   margin: 40px auto;
@@ -256,5 +279,6 @@ a {
   margin-bottom: 12px;
   color: #2c3e50;
 }
+
 
 
