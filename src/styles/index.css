@@ -106,8 +106,8 @@ a {
   box-shadow: 0 4px 30px rgba(0,0,0,0.1);
   color: #222;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-  min-height: 600px; 
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 .projects h1 {
@@ -171,6 +171,27 @@ a {
 .project-card a:hover {
   text-decoration: underline;
 }
+
+.sticky-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: 40px;
+  z-index: 1000;
+  font-size: 0.8rem;         
+  padding: 6px 10px;         
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
 .resume {
   max-width: 900px;
   margin: 40px auto;

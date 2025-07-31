@@ -12,14 +12,18 @@ function Projects() {
         </div>
     ));
     return (
+        <>
+        <div className="sticky-links">
+            <Link to="/" className="right-link">Go to Home</Link>
+            <Link to="/resume" className="left-link">Go to Resume</Link>
+        </div>
         <div className="projects">
             <h1>Welcome to my Projects</h1>
             <div className="projects-list">  
             {projectList}
             </div>
-            <Link to="/" className="right-link">Go to Home</Link>
-            <Link to="/resume" className="left-link">Go to Resume</Link>
         </div>
+        </>
     );
 }
 
