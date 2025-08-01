@@ -360,15 +360,31 @@ a {
     text-align: center;
   }
 
+  /* Footer fijo abajo con íconos en fila */
   .contact-icons {
-    flex-direction: column;
-    gap: 10px;
-    bottom: 10px;
-    right: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #fbfcfd;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  /* Ajuste de tamaño de los íconos SVG */
+  .contact-icons a svg {
+    width: 24px;
+    height: 24px;
+    transition: width 0.3s ease, height 0.3s ease;
   }
 
   .projects-list {
-    grid-template-columns: 1fr; /* de una sola columna */
+    grid-template-columns: 1fr; /* una sola columna */
   }
 
   .project-card {
@@ -380,3 +396,4 @@ a {
     padding: 10px;
   }
 }
+
