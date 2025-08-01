@@ -4,7 +4,13 @@ const projects = [
     name: 'Project 1 - Dashboard',
     image:
       'https://res.cloudinary.com/dn221o8fa/image/upload/v1749924566/Screenshot_2025-06-14_200831_sx2gzd.png',
-    description: 'Dashboard multifuncion con gestor de contraseñas, un reloj con frases con funciones como New date y setInterval, y un gestor de tareas, una app del clima con fetch a API Weather, y un gestor de links que los administra en localStorage. Herramientas utilizadas HTML, CSS Y JS. 100% Frontend y renderizado con git hub pages.',
+    description: `Multifunctional Dashboard built with HTML, CSS, and JavaScript — a 100% frontend application deployed via GitHub Pages.
+Features include:
+- A password manager
+- A real-time clock with dynamic quotes using Date and setInterval
+- A task manager
+- A weather app that fetches data from the Weather API using fetch
+- A link organizer that stores and manages URLs using localStorage`,
     url: 'https://mflor-pd.github.io/project-break-dashboard/',
   },
   {
@@ -12,7 +18,7 @@ const projects = [
     name: 'Project 2 - E-commerce',
     image:
       'https://res.cloudinary.com/dn221o8fa/image/upload/v1749924646/Screenshot_2025-06-14_201032_t8ybro.png',
-    description: 'Aplicacion E-commerce con autenticacion de usuarios, gestion de productos. Construido con React, Node.js y MongoDB.',
+    description: `E-commerce application with user authentication and product management. Built with React, Node.js, and MongoDB.`,
     url: 'https://proyect-break-fullbackend.onrender.com/products',
   },
   {
@@ -20,9 +26,12 @@ const projects = [
     name: 'Project 3 - SocoShifts: Intelligent Work Roster Tool',
     image:
       'https://res.cloudinary.com/dn221o8fa/image/upload/v1753382096/Screenshot_2025-07-24_203341_xzz9jf.png',
-    description: 'Aplicacion para gestionar cuadrantes en entornos dinamicos como ser la hosteleria, la restauracion y el servicio de socorrismo. Genera los turnos de trabajo aleatoriamente ajustando parametros especificos como ser la carga horaria diaria, la cantidad de socorristas y la necesidad de socorristas en la zona. Actualmente esta en mvp solo para el ambiente del socorrismo. Utiliza para el backend: Node.js, Express, PostgreSQL, AWS, Prisma. Para el frontend: React y Tailwind CSS.',
+    description: `Application designed to manage work rosters in dynamic environments such as hospitality, restaurants, and lifeguard services. It automatically generates work shifts based on specific parameters like daily workload, number of workers, and staffing needs. Currently in MVP stage focused on lifeguard services only.
+Backend: Node.js, Express, PostgreSQL, AWS, Prisma.
+Frontend: React and CSS.`,
     url: 'https://beachrostermanagment.netlify.app',
   },
 ];
 
 export default projects;
+
