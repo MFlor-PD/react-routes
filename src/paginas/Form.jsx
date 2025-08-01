@@ -20,10 +20,13 @@ function ContactForm() {
   };
 
   return submitted ? (
-    <div className="thanks">
-      <h2>Thank you! Your message has been sent. ✅</h2>
+    
+      <>
       <Link to="/" className="right-link">Back to Home</Link>
-    </div>
+      <div className="thanks">
+        <h2>Thank you! Your message has been sent. ✅</h2>
+      </div>
+    </>
   ) : (
     <>
       <div className="sticky-links">
@@ -31,7 +34,8 @@ function ContactForm() {
       </div>
 
       <div className="resume">
-        <h1>Contact Me</h1>
+        <h1>For Any Inquiries or Collaborations</h1>
+        <p>Whether you're looking for a freelance developer, a long-term teammate, or just want to connect — feel free to reach out!</p>
 
         <form
           name="contact"

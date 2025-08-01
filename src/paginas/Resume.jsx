@@ -27,11 +27,11 @@ function Resume() {
     
       <div className="resume">
           <h1>My Resume</h1>
-            <p>I'm a Full Stack Developer with a strong focus on creating applications that simplify everyday life. I enjoy building intuitive, user-friendly web applications using technologies like React, JavaScript, CSS, Node.js, Express, APIs, and databases. My projects reflect both technical proficiency and a strong attention to design, usability, and performance.
-               I worked on a variety of applications—from dynamic dashboards and e-commerce sites to intelligent work scheduling tools. I’m passionate about clean code, responsive design, and crafting meaningful digital experiences.
-               Always learning, always building, and never afraid of new challenges. Falling down, getting back up, and moving forward is the key to success. Nobody said it would be easy, but we have to start.</p>
-
-            <p>“The most difficult thing is the decision to act, the rest is merely tenacity.” Amelia Earhart</p>      
+            <p>I'm a simple person who enjoys life, embraces every opportunity it brings, and is always grateful for the journey.
+              Humble like my portfolio — but always ready to grow, ready for action, ready for more.</p>
+            
+            <p>“Regret trying, not missing the chance because you weren't brave enough.”</p>
+ 
           <h2>Education</h2>
             {studiesList}
 

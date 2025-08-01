@@ -16,7 +16,7 @@ a {
 .home {
   position: relative;  
   max-width: 900px;
-  height: 300px;       
+  min-height: 300px;       
   margin: 40px auto;
   padding: 20px;
   background-color: #fbfcfd;
@@ -298,6 +298,34 @@ a {
   text-shadow: none;
   font-weight: 500;
 }
+
+.thanks {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f4f8fb;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  font-size: 1.2rem;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
 
 @media (max-width: 768px) {
   .home, .projects, .resume {
