@@ -62,8 +62,7 @@ function ContactForm() {
           name="contact"
           method="POST"
           data-netlify="true"
-          data-netlify-recaptcha="true"
-          netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true" //netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           style={{ maxWidth: "500px", margin: "auto" }}
         ><input type="hidden" name="form-name" value="contact" />
