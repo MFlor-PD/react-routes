@@ -111,7 +111,8 @@ function ContactForm() {
           </p>
 
           {/* reCAPTCHA */}
-          <div style={{ marginBottom: "20px" }}>
+          <div style={{ marginBottom: "20px", display: "flex", justifyContent: "center"
+           }}>
              <ReCAPTCHA
              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
              onChange={(value) => setRecaptchaValue(value)}
