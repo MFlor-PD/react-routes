@@ -10,9 +10,9 @@ function ContactForm() {
 
   return (
     <>
-      <Link to="/" className="right-link">
-        Back to Home
-      </Link>
+      <a href="/" className="right-link">
+      Back to Home
+      </a>
 
       {submitted ? (
       <div className="thanks">
