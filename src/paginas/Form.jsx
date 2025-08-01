@@ -7,7 +7,7 @@ function ContactForm() {
   const recaptchaRef = useRef(null);
   const [recaptchaValue, setRecaptchaValue] = useState(null);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (!recaptchaValue) {
@@ -17,21 +17,33 @@ function ContactForm() {
 
     const form = event.target;
     const data = new FormData(form);
+    data.append("form-name", "contact"); // 🔐 Necesario para que Netlify reconozca el form
+    data.append("g-recaptcha-response", recaptchaValue); // 🔐 Token del reCAPTCHA
 
-    // Añadimos el token del reCAPTCHA al body
-    data.append("g-recaptcha-response", recaptchaValue);
+    const params = new URLSearchParams();
+    for (const [key, value] of data.entries()) {
+      params.append(key, value);
+    }
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(data).toString(),
-    })
-      .then(() => {
-        setSubmitted(true);
-        recaptchaRef.current.reset(); // Limpia el captcha al enviar
-        setRecaptchaValue(null);
-      })
-      .catch((error) => alert(error));
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: params.toString(),
+      });
+
+      if (!response.ok) throw new Error("Error en el envío");
+
+      setSubmitted(true);
+      form.reset();
+      recaptchaRef.current.reset(); // 🧼 Limpia el captcha
+      setRecaptchaValue(null);
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      alert("❌ Hubo un problema al enviar el mensaje.");
+    }
   };
 
   return submitted ? (
@@ -62,14 +74,14 @@ function ContactForm() {
           name="contact"
           method="POST"
           data-netlify="true"
-          data-netlify-recaptcha="true" //netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
           onSubmit={handleSubmit}
           style={{ maxWidth: "500px", margin: "auto" }}
-        ><input type="hidden" name="form-name" value="contact" />
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
-              Don’t fill this out if you're human:{" "}
-              <input name="bot-field" />
+              Don’t fill this out if you're human: <input name="bot-field" />
             </label>
           </p>
 
@@ -110,12 +122,18 @@ function ContactForm() {
           </p>
 
           {/* reCAPTCHA */}
-          <div style={{ marginBottom: "20px", display: "flex", justifyContent: "center"
-           }}>
-             <ReCAPTCHA
-             sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-             onChange={(value) => setRecaptchaValue(value)}
-             ref={recaptchaRef}/>
+          <div
+            style={{
+              marginBottom: "20px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <ReCAPTCHA
+              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+              onChange={(value) => setRecaptchaValue(value)}
+              ref={recaptchaRef}
+            />
           </div>
 
           <p>
