@@ -1,22 +1,24 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
+
 
 function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted] = useState(false);
 
   // Opcional: solo para mostrar mensaje tras submit (Netlify redirige o no según config)
   // Pero como submit será normal, podemos usar "action" para ir a página de gracias o lo dejamos así.
 
-  return submitted ? (
+  return (
     <>
       <Link to="/" className="right-link">
         Back to Home
       </Link>
+
+      {submitted ? (
       <div className="thanks">
         <h2>Thank you! Your message has been sent. ✅</h2>
       </div>
-    </>
+    
   ) : (
     <div className="resume" style={{ maxWidth: "500px", margin: "auto" }}>
       <h1>For Any Inquiries or Collaborations</h1>
@@ -30,8 +32,8 @@ function ContactForm() {
         method="POST"
         data-netlify="true"
         data-netlify-recaptcha="true"
-        netlify-honeypot="bot-field"
-      >
+        netlify-honeypot="bot-field">
+
         <input type="hidden" name="form-name" value="contact" />
 
         <p hidden>
@@ -94,7 +96,10 @@ function ContactForm() {
         </p>
       </form>
     </div>
+  )}
+  </>
   );
+
 }
 
 export default ContactForm;
