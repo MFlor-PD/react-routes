@@ -112,10 +112,10 @@ function ContactForm() {
 
           {/* reCAPTCHA */}
           <div style={{ marginBottom: "20px" }}>
-            <ReCAPTCHA
-            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-            onChange={(value) => setRecaptchaValue(value)}
-            ref={recaptchaRef}/>
+             <ReCAPTCHA
+             sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+             onChange={(value) => setRecaptchaValue(value)}
+             ref={recaptchaRef}/>
           </div>
 
           <p>
