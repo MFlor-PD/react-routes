@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 
@@ -10,10 +9,6 @@ function ContactForm() {
 
   return (
     <>
-      <a href="/" className="right-link">
-      Back to Home
-      </a>
-
       {submitted ? (
       <div className="thanks">
         <h2>Thank you! Your message has been sent. ✅</h2>
@@ -21,6 +16,9 @@ function ContactForm() {
     
   ) : (
     <div className="resume" style={{ maxWidth: "500px", margin: "auto" }}>
+      <a href="/" className="right-link-form">
+      Back to Home
+      </a>
       <h1>For Any Inquiries or Collaborations</h1>
       <p>
         Whether you're looking for a freelance developer, a long-term teammate,

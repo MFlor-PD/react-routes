@@ -76,8 +76,6 @@ a:hover {
   box-shadow: 
     0 4px 15px rgba(59, 130, 246, 0.3),
     0 0 0 1px rgba(59, 130, 246, 0.2);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .home a:hover {
@@ -374,6 +372,27 @@ a:hover {
   color: #e2e8f0;
 }
 
+.right-link-form{
+    bottom: 20px;
+    right: 20px;
+
+    display: inline-block;
+    margin-right: 15px;
+    padding: 12px 24px;
+
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3), 0 0 0 1px rgba(59, 130, 246, 0.2);
+}
+
 .sendButton {
   background: linear-gradient(135deg, #0ea5e9, #0284c7);
   color: white;
@@ -552,9 +571,13 @@ a:hover {
 
   .sticky-links .left-link, .right-link {
     font-size: 0.8rem;
-    padding: 7px;
+    padding: 4px;
     margin: -10px;
   }
 
+  .right-link-form{
+    font-size: 0.8rem;
+    padding: 4px;
+  }
 }
 
