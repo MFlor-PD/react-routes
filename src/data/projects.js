@@ -9,6 +9,24 @@ Backend: Node.js, Express, PostgreSQL, AWS, Prisma.
 Frontend: React and CSS.`,
     url: 'https://beachrostermanagment.netlify.app',
   },
+  {
+    id: 5,
+    name: 'CriptoCoin',
+    image:
+      'https://res.cloudinary.com/dn221o8fa/image/upload/v1754572471/Screenshot_2025-08-07_150914_bj2v1g.png',
+    description: `A web app to keep you updated with the latest cryptocurrency info using data from CoinCap.
+Frontend: React, Hooks (useRef, useState, and useEffect), localStorage, and CSS.`,
+    url: 'https://criptocoinreact.netlify.app',
+  },
+  {
+    id: 4,
+    name: 'Color - Game with React and UseRef',
+    image:
+      'https://res.cloudinary.com/dn221o8fa/image/upload/v1754572470/Screenshot_2025-08-07_150814_ka922p.png',
+    description: `A simple and fun game to learn colors in English with a clean and responsive interface.
+Frontend: React, Hooks (useRef, useState, and useEffect), localStorage, and CSS.`,
+    url: 'https://colorchallengue.netlify.app',
+  },
    {
     id: 2,
     name: 'E-commerce',
