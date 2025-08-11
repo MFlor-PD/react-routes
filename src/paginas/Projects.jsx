@@ -9,6 +9,12 @@ function Projects() {
             <img src={project.image} alt={project.name} className="project-image" />
             <p>{project.description}</p>
             <p>URL: <a href={project.url}>{project.url}</a></p>
+            {project.GithubFrontend && (
+            <p>GitHub (Frontend): <a href={project.GithubFrontend}>{project.GithubFrontend}</a></p>
+            )}
+            {project.GitHubBackend && (
+            <p>GitHub (Backend): <a href={project.GitHubBackend}>{project.GitHubBackend}</a></p>
+            )}
         </div>
     ));
     return (
