@@ -1,9 +1,22 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import projects from "../data/projects"; 
+import { useState } from "react";
 
 function Projects() {
-    const projectList = projects.map((project) => (
+
+     const [filter, setFilter] = useState("all");
+
+    const filteredProjects = projects.filter((project) => {
+        if (filter === 'frontend') {
+            return project.GithubFrontend;
+        } else if (filter === 'backend') {
+            return project.GitHubBackend;
+        } else {
+            return true;
+        }
+    })
+
+    const projectList = filteredProjects.map((project) => (
         <div key={project.id} className="project-card">
             <h2>{project.name}</h2>
             <img src={project.image} alt={project.name} className="project-image" />
@@ -25,6 +38,11 @@ function Projects() {
         </div>
         <div className="projects">
             <h1>Have a Look!</h1>
+             <div className="filter-buttons">
+          <button onClick={() => setFilter("all")} className="button">All</button>
+          <button onClick={() => setFilter("frontend")}className="button">Frontend</button>
+          <button onClick={() => setFilter("backend")}className="button">Backend</button>
+        </div>
             <div className="projects-list">  
             {projectList}
             </div>
