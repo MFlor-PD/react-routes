@@ -16,18 +16,24 @@ const studies = [
 const experiences = [
   {
     id: 1,
-    title: 'Lifeguard Coordinator',
-    company: 'Marsave - Ibiza',
-    date: 'APR 2024 - NOV 2024',
+    title: 'Internship as Web Developer',
+    company: 'Kival informatica - Valencia, Spain',
+    date: 'OCT 2025 - NOV 2025',
   },
   {
     id: 2,
+    title: 'Lifeguard Coordinator',
+    company: 'Marsave - Ibiza, Spain',
+    date: 'APR 2024 - NOV 2024',
+  },
+  {
+    id: 3,
     title: 'Lifeguard Manager',
     company: 'Tobruk Memorial Pool - Australia',
     date: 'JUN 2022 - AUG 2023',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Physical Education Teacher',
     company: 'Argentina, Spain, and Australia',
     date: 'DIC 2013 - APR 2021',

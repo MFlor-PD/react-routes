@@ -22,6 +22,19 @@ FRONTEND: React and CSS.`,
    GithubFrontend: 'https://github.com/MFlor-PD/PROYECT-BREAK-FULLBACKEND'
   },
   {
+    id: 8,
+    name: 'Coin-Converter',
+    image:
+      'https://res.cloudinary.com/dn221o8fa/image/upload/v1760437659/Screenshot_2025-10-14_122653_utppdn.png',
+    description: `A web aplication that allows users to convert currencies using real-time exchange rates from a freeCurrency, an external API. It was built with Angular for the frontend and TypeScript for the backend, ensuring a robust and type-safe development experience.
+    FRONTEND: Angular, TypeScript, RxJS, and CSS, deploy on Vercel.
+    BACKEND: Node.js and pnpm, Express, TypeScript, Cors and Axios. Deploy on Render.
+    Backend GitHub: https://github.com/MFlor-PD/Conversor-moneda-tsc`,
+    url: 'https://conversor-moneda-frontcon-angular.vercel.app/',
+    GitHubFrontend: 'https://github.com/MFlor-PD/Conversor-moneda-frontconAngular',
+    GitHubBackend: `https://github.com/MFlor-PD/Conversor-moneda-tsc`
+  },
+  {
     id: 7,
     name: 'Testing with Jest',
     image:
