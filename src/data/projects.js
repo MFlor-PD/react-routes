@@ -1,5 +1,17 @@
 const projects = [
   {
+    id: 9,
+    name: 'shift-Controller',
+    image:
+      'https://res.cloudinary.com/dn221o8fa/image/upload/v1766056734/Screenshot_2025-12-18_121821_saabgk.png',
+    description: `A web and iOS application that allows users to track and manage their work hours, designed specifically for shift workers with login. Deployment: Web version deployed on Netlify, backend deployed on Render.
+    FRONTEND: TypeScript, React Native, React components, Expo.
+    BACKEND: Node.js, Express, TypeScript, pnpm, Cors, Axios.`,
+    url: 'https://shiftcontroller.netlify.app/',
+    GitHubFrontend: 'https://github.com/MFlor-PD/Frontend_control_horas',
+    GitHubBackend: `https://github.com/MFlor-PD/backend-aplicacion-movil-fichaje`
+  },
+  {
     id: 3,
     name: 'SocoShifts: Intelligent Work Roster Tool',
     image:
