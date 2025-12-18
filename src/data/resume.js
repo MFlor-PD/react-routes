@@ -1,5 +1,11 @@
 const studies = [
   {
+    id: 3,
+    title: 'Certificado de Profesionalidad IFCD0110 – Confección y publicación de páginas web',
+    institution: 'Dabo Consulting - Valencia, Spain',
+    date: '2025 - 2025',
+  },
+  {
     id: 1,
     title: 'Desarrollador Web Full Stack',
     institution: 'The Bridge - Escuela de Tecnología',
